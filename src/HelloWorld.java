@@ -1,17 +1,15 @@
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
 
-        int[] arr = new int[5];
-        arr[0] = 2;
-        arr[1] = 4;
-        arr[2] = 6;
-        arr[3] = 8;
-        arr[4] = 10;
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
 
-        for(int i =0; i<5; i++){
-            System.out.printf(i+1 + "번쨰에는 %d가 들어있습니다.%n", arr[i]);
-        }
-
+        if((year%4==0 && year%100!=0) || year%400==0) {
+            System.out.println("1");
+        }else
+            System.out.println("0");
 
     }
 }
