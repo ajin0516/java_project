@@ -12,6 +12,7 @@ public class Cacculator {
         System.out.println(first * second);
     }
     public void divide(int first, int second) {
-        System.out.println(first / second);
+        float result = (float) first/second ;
+        System.out.println(result);
     }
 }
