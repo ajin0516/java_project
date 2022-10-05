@@ -1,18 +1,25 @@
 package Java1005;
 
 public class Cacculator {
+    private int a;
+    private int b;
 
-    public void plus(int first, int second) {
-        System.out.println(first + second);
+    public Cacculator(){};
+
+    public Cacculator(int a ,int b) {
+        this.a = a;
+        this.b = b;
     }
-    public void minus(int first, int second) {
-        System.out.println(first - second);
+    public void plus() {
+        System.out.println(a + b);
     }
-    public void multiple(int first, int second) {
-        System.out.println(first * second);
+    public void minus() {
+        System.out.println(a - b);
     }
-    public void divide(int first, int second) {
-        float result = (float) first/second ;
-        System.out.println(result);
+    public void multiple() {
+        System.out.println(a * b);
+    }
+    public void divide() {
+        System.out.println((float)a/b);
     }
 }
