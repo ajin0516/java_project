@@ -1,4 +1,4 @@
-package Java1006;
+package Java1006.Map;
 
 import java.util.HashMap;
 import java.util.Locale;
