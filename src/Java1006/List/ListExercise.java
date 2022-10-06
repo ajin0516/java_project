@@ -1,4 +1,4 @@
-package Java1006;
+package Java1006.List;
 
 import java.util.ArrayList;
 import java.util.List;
