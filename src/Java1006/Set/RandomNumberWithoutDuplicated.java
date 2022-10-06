@@ -1,7 +1,8 @@
-package Java1006;
+package Java1006.Set;
+
+import Java1006.List.RandomNumberGenerator;
 
 import java.util.HashSet;
-import java.util.Set;
 
 public class RandomNumberWithoutDuplicated {
     public static void main(String[] args) {
