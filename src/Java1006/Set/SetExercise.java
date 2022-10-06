@@ -16,8 +16,9 @@ public class SetExercise {
         setInteger.add(2);
         setInteger.add(3);
         setInteger.add(4);
-        setInteger.add(5);
+        setInteger.add(4);
 
+        System.out.println(set1);
         System.out.println(setInteger);
     }
 }

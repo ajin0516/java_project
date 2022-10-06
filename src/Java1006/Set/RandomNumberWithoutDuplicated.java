@@ -11,7 +11,7 @@ public class RandomNumberWithoutDuplicated {
         HashSet<Integer> numbers = new HashSet<>(); // Set - 중복제거
 
         for(int i=0; i<50; i++){
-            numbers.add(randomNumberGenerator.generate(30));
+            numbers.add(randomNumberGenerator.generate(30)); //랜덤 알바벳 생성
         }
         System.out.println(numbers);
         System.out.println("총 " + numbers.size() + "개 입니다.");
