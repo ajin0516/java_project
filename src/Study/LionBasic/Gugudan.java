@@ -1,21 +1,34 @@
 package Study.LionBasic;
 
+interface Operation {
+    int operation(int a, int b);
+}
+
 public class Gugudan {
-    public static void main(String[] args) {
 
-        for(int i = 2; i <= 9; i++){
-            for(int j = 1; j <= 9; j++){
-                System.out.println( i + "x" + j + " = " + (i*j));
-            }
-            System.out.println();
+    public void printGugudanTemlate(int dan, String operator, Operation operation) {
+
+        for (int i = 1; i <= 9; i++) {
+            System.out.printf("%d %s %d = %d\n", dan, operator, i, operation.operation(dan, i));
         }
-
-        for(int i = 2; i <= 9; i++){
-            for(int j = 1; j <= 9; j++){
-                System.out.println( i + "+" + j + " = " + (i+j));
-            }
-            System.out.println();
-        }
-
     }
+
+
+    public void PrintGugudaPlus(int dan) {
+        printGugudanTemlate(dan, "+", (a, b) -> a + b);
+    }
+
+    public void PrintGugudaMultiple(int dan) {
+        printGugudanTemlate(dan, "*", (a, b) -> a * b);
+    }
+
+    public static void main(String[] args) {
+        Gugudan gugudan = new Gugudan();
+
+        gugudan.PrintGugudaPlus(3);
+
+        gugudan.PrintGugudaMultiple(3);
+    }
+
+
 }
