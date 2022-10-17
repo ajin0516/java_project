@@ -1,23 +1,15 @@
 package Java1017;
-
 public class RightTriagle {
-    public static void main(String[] args) {
-        /*
-        *
-        * *
-        * * *
-        * * * *
-        *
-         */
-        for(int i = 1; i < 5; i++){
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+    public void starNum(int num){
+        for(int i = 0; i < num; i++){
+            for (int j = 0; j <= i; j++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
-//        System.out.println("*");
-//        System.out.println("**");
-//        System.out.println("***");
-//        System.out.println("****");
+    }
+    public static void main(String[] args) {
+        RightTriagle rightTriagle = new RightTriagle();
+        rightTriagle.starNum(6);
     }
 }
