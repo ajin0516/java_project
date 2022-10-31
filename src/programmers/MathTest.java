@@ -11,11 +11,12 @@ public class MathTest {
 두번째 0 2
 세번째 0 2
  */
-//        int[] answers = {1,2,3,4,5};
-        int[] firstStudent = {1, 2, 3, 4, 5};
+        int[] firstStudent = {1, 2, 3, 4, 5}; // 반복이 안되네?...
         int[] secondStudent = {2, 1, 2, 3, 2, 4, 2, 5};
         int[] thirdStudent = {3, 3, 1, 1, 2,  2, 4, 4, 5, 5};
         int firstStudentAnswerCnt = 0;
+        int secondStudentAnswerCnt = 0;
+        int thirdStudentAnswerCnt = 0;
 
         for (int i = 0; i < answers.length; i++) {
             if(answers[i] != firstStudent[i]){
@@ -23,12 +24,24 @@ public class MathTest {
             }
             firstStudentAnswerCnt++;
         }
+
+
+        String answerPattern1 = "1, 2, 3, 4, 5".repeat(2000);
+        String answerPattern2 = "2, 1, 2, 3, 2, 4, 2, 5".repeat(1250);
+        String answerPattern3 = "3, 3, 1, 1, 2,  2, 4, 4, 5, 5".repeat(1000);
+
+        for (int i = 0; i < answers.length; i++) {
+
+            if( (answerPattern1.charAt(i) - '0') == answers[i]){
+                firstStudentAnswerCnt++;
+            }
+
+        }
         return new int[0];
     }
 
     public static void main(String[] args) {
         MathTest mathTest = new MathTest();
-        int[] ans
-        mathTest.solution()
+        int[] answers = {1,2,3,4,5};
     }
 }
