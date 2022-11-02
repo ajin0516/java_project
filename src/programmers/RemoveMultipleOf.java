@@ -17,9 +17,9 @@ public class RemoveMultipleOf {
         }
 
         // 2의 배수 지우기 2제외
-        // 1부터 시작하면 ?
-        for (int i = 1; i < nums.size(); i++) {
-            if(nums.get(i) % 2 == 0){
+        // 1부터 시작하면 ? - 안됨
+        for (int i = 0; i < nums.size(); i++) {
+            if(nums.get(i) % 2 == 0 && nums.get(i) > 2){
                 nums.remove(i);
             }
         }
