@@ -3,7 +3,7 @@ package programmers;
 public class CaesarCipher {
 
     public String solution(String s, int n) {
-        String answer = "Z";
+        String answer = "a B z";
         int num = 4;
         int a = 97; // a
         int b = 122; // z
@@ -18,15 +18,15 @@ public class CaesarCipher {
             int x = (int)answer.charAt(i) + 0;
 
             if(x >= 97 && x <= 122){
-                int plusOne = x + 1; //123
-                if(plusOne > 122){
-                    plusOne = x - 25;
+                int plusOne = x + num;
+                if(plusOne > 122){ //123
+                    plusOne = plusOne - 26;
                 }
                 char plusAlpha = (char)plusOne;
                 result += plusAlpha;
                 System.out.println(result + "1");
             } else if (x >= 65 && x <= 90) {
-                int plusOne = x + 1; //91
+                int plusOne = x + num; //91
                 if(plusOne > 90){
                     plusOne = x -25;
                 }
